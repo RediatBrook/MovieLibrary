@@ -95,8 +95,7 @@ int main(int argc, char *argv[]) {
 		//std::cout << "\t" << *word<<std::endl;
 		actorsInMovie.push_back(actor);
 		if(actorLibrary.count(actor)!=0){
-		std::vector<std::string>actorMovieList = actorLibrary.at(actor);
-		actorMovieList.push_back(movie);
+		actorLibrary.at(actor).push_back(movie);
 		}else{
 			std::vector<std::string>actorMovieList;
 			actorMovieList.push_back(movie);
